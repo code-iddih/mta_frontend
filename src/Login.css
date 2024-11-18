@@ -1,0 +1,106 @@
+/* src/components/Login.css */
+/* src/Login.css */
+/* Overall container for the login box */
+/* Navbar styles */
+/* Login container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 60px auto; /* Center the container horizontally with a top margin */
+  padding: 30px;
+  background-color: #333; /* Same color as navbar */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align all child elements (form fields) to the center */
+  text-align: center; /* Ensure headings and links are centered */
+}
+
+/* Heading styling */
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #61dafb; /* Lighter blue for a modern feel */
+}
+
+/* Form field container */
+.login-container form {
+  width: 100%;
+}
+
+.login-container form div {
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the divs take full width */
+}
+
+/* Label styling */
+.login-container form label {
+  display: block;
+  font-weight: 600;
+  color: #ccc; /* Lighter color for labels */
+  margin-bottom: 8px;
+}
+
+/* Input field styling */
+.login-container form input {
+  width: 95%; /* Make input fields take full width of the form */
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #444; /* Slightly darker border for contrast */
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: block;
+  margin-bottom: 15px; /* Consistent spacing after inputs */
+}
+
+/* Input focus effect */
+.login-container form input:focus {
+  border-color: #61dafb; /* Blue border on focus */
+  background-color: #333; /* Slightly darker background when focused */
+  outline: none;
+}
+
+/* Button styling */
+.login-container form button {
+  width: 100%; /* Full width to align with input fields */
+  padding: 12px;
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px; /* Consistent spacing below form fields */
+}
+
+/* Button hover and active states */
+.login-container form button:hover {
+  background-color: #21a1f1;
+}
+
+.login-container form button:active {
+  transform: scale(0.98); /* Slight scale down on click for better feedback */
+}
+
+/* Forgot password link styling */
+.login-container form .forgot-password {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-container form .forgot-password a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.login-container form .forgot-password a:hover {
+  text-decoration: underline;
+}

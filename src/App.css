@@ -1,0 +1,38 @@
+/* App.css */
+
+/* General App styling */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Homepage-specific background styling */
+.App.home-background {
+  background-image: url('https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  min-height: 100vh; /* Ensure it covers the full view height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Content grows to fill available space */
+.content {
+  flex: 1;
+  width: 100%;
+}
+
+/* Footer with blue background */
+.App-footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007BFF; /* Blue background color */
+  color: white;
+  font-size: calc(8px + 1vmin);
+  width: 100%;
+}
