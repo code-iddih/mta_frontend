@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base URL for the API
-const API_URL = process.env.REACT_APP_API_URL || "https://mta-backend-ff2w.onrender.com/api";
+const API_URL = process.env.REACT_APP_API_URL || "https://mta-backend-jz6i.onrender.com/api";
 
 // Axios instance with default settings
 const api = axios.create({

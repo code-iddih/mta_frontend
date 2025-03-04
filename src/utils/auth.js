@@ -4,7 +4,7 @@ import api from "./api";
 // Login function
 export const login = async (email, password) => {
     try {
-      const response = await api.post("https://mta-backend-ff2w.onrender.com/api/users/login", {
+      const response = await api.post("https://mta-backend-jz6i.onrender.com/api/users/login", {
         email,
         password,
       });
@@ -26,7 +26,7 @@ export const login = async (email, password) => {
 // Register function
 export const register = async (userData) => {
   try {
-    const response = await api.post("https://mta-backend-ff2w.onrender.com/api/users/register", {
+    const response = await api.post("https://mta-backend-jz6i.onrender.com/api/users/register", {
       email: userData.email,
       password: userData.password,
       confirmPassword: userData.confirmPassword,
@@ -50,7 +50,7 @@ export const logout = () => {
 // Password reset function
 export const resetPassword = async (email) => {
   try {
-    const response = await api.post("https://mta-backend-ff2w.onrender.com/api/auth/reset-password", { email });
+    const response = await api.post("https://mta-backend-jz6i.onrender.com/api/auth/reset-password", { email });
     return response.data;
   } catch (error) {
     console.error("Password reset error:", error);
@@ -61,7 +61,7 @@ export const resetPassword = async (email) => {
 // Checking authentication status function
 export const checkAuthStatus = async () => {
   try {
-    await api.get("https://mta-backend-ff2w.onrender.com/api/users/profile", {
+    await api.get("https://mta-backend-jz6i.onrender.com/api/users/profile", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
